@@ -1,0 +1,62 @@
+.title {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 2.3rem;
+
+  @include respond(tablet) {
+    font-size: 2.4rem;
+    padding-top: 4rem;
+  }
+
+  @include respond(lessThanMinWidth) {
+    font-size: 1.5rem;
+  }
+}
+
+.title-eye {
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @include respond(bigSreen) {
+    align-items: center;
+    justify-content: center;
+  }
+
+  & span {
+    &:first-child {
+      padding-left: 33px;
+
+      @include respond(bigSreen) {
+        padding: 0px 70px;
+      }
+
+      @include respond(lessThanMinWidth) {
+        padding-left: 25px;
+      }
+    }
+
+    &:last-child {
+      @include respond(bigSreen) {
+        padding: 0px 20px;
+      }
+      @include respond(lessThanMinWidth) {
+        padding-right: 0;
+      }
+    }
+
+    @include respond(lessThanMinWidth) {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+span {
+  font-weight: 700;
+  font-size: 1rem;
+
+  @include respond(tablet) {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: url("/src/img/background.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    height: 80vh;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  body {
+    height: 35vh;
+  }
+}
+
+#whatLens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+#whatLens h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  #whatLens h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  #whatLens h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  #whatLens h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #whatLens {
+    margin: 2.5rem 0;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  #whatLens {
+    margin: 2rem 0;
+  }
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  padding: 3rem;
+  text-align: center;
+  margin-top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+    padding: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .container {
+    margin-top: 14%;
+    width: 60%;
+  }
+}
+
+input {
+  margin-top: 1rem;
+  padding: 8px 20px;
+  color: black;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  outline: none;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+input:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+select {
+  margin: 5px;
+  width: 34%;
+  font-size: 1rem;
+  outline: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+  select {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  select {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  select {
+    margin: 4px;
+    width: 65px;
+    font-size: 0.75rem;
+  }
+}
+
+.title {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 2.3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 2.4rem;
+    padding-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+.title-eye {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 1350px) {
+  .title-eye {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+.title-eye span:first-child {
+  padding-left: 33px;
+}
+
+@media only screen and (min-width: 1350px) {
+  .title-eye span:first-child {
+    padding: 0px 70px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .title-eye span:first-child {
+    padding-left: 25px;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .title-eye span:last-child {
+    padding: 0px 20px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .title-eye span:last-child {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .title-eye span {
+    font-size: 0.75rem;
+  }
+}
+
+span {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  span {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

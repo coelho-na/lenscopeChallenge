@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lenscope - Lentes para óculos</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/style.css" />
+  </head>
+  <body>
+    <div class="overlay">
+      <h1 class="title">Escolha seu grau e definiremos sua lente!</h1>
+      <div class="container">
+        <div class="title-eye">
+          <span>Esférico</span>
+          <span>Cilíndrico</span>
+        </div>
+
+        <div class="right-eye">
+          <span>OD:</span>
+
+          <select id="right-eye__esferico"></select>
+
+          <select id="right-eye__cilindrico"></select>
+        </div>
+
+        <div classs="left-eye">
+          <span>OE:</span>
+          <select id="left-eye__esferico"></select>
+          <select id="left-eye__cilindrico"></select>
+        </div>
+        <input type="button" value="Submit" onclick="getSelectValue()" />
+      </div>
+      <div id="whatLens"></div>
+    </div>
+
+    <script src="./src/scripts/index.js"></script>
+  </body>
+</html>

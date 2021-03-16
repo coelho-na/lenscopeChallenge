@@ -1,0 +1,25 @@
+@import "./mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: url("/src/img/background.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  @include respond(tablet) {
+    height: 80vh;
+  }
+  @include respond(bigSreen) {
+    height: 35vh;
+  }
+}
